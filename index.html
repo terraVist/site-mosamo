@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<meta charset="utf-8">
+	<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="css/unique.css">
+</head>
+<body>
+
+<header>
+	<div class="ide row col l12 m12 s12">
+		<div class="logo col  m3 l2">
+			<a href="index.html" class="right"><img src="imgs/logo.png"></a>
+		</div>
+		<div class="name col  m9 l10">
+			<label id="nome-p">Ateliê</label>
+			<label id="nome-g">Mosamô <label id="dif">Patchwork</label></label>	
+		</div>
+	</div>
+
+<div class="alinhar container">
+	<div class="row">
+		<div class="sacola col s4 m3 l2">
+			<a href="#"><i class="material-icons left">local_mall</i>Sacola Vazia</a></div>
+		<div class="sign col s4 m3 l4">
+			<a class="modal-trigger" href="#modal1">Login</a>
+			ou
+			<a class="modal-trigger" href="#modal2">Cadastre-se</a>
+		</div>
+		<div class="search right col s12 m6 l6">Pesquisa</div>
+	</div>
+	<!--Modal Login-->
+	<div id="modal1" class="modal">
+	    <div class="modal-content">
+	      	<form action="index-logado.html">
+	      		<div class="input-field">
+          			<input placeholder="Digite o e-mail" id="email" type="email" class="validate">
+          			<label for="email">E-mail</label>
+        		</div>
+        		<div class="input-field">
+          			<input placeholder="Digite a senha" id="senha" type="text" class="validate">
+          			<label for="senha">Senha</label>
+        		</div>
+
+        		<div class="alinharbt">
+        			<input type="checkbox" class="filled-in" id="manterlog" />
+        			<label for="manterlog" id="manterlog">Manter conectado</label>
+
+	      			<button class="bt-entrar btn waves-effect" type="submit" name="action">Entrar</button>
+
+	      			<p id="ou">ou</p>
+      				<button class="bt-loginf btn waves-effect" type="submit" name="action">Logar com o Facebook
+
+		      		<button class="bt-loging btn waves-effect" type="submit" name="action"><i class="mdi mdi-facebook-box"></i>Logar com o Google</button>
+
+		      		<a href="#" id="lbl-esq">Esqueci minha senha</a>
+				</div>
+	      	</form>
+	    </div>
+	</div>
+
+	<!--Modal Cadastro-->
+	<div id="modal2" class="modal">
+	    <div class="modal-content">
+	    	<div class="inf-cad col m12 l12">
+				<label class="titulo-form">Cadastro</label>
+
+				<div id="texto-sup">Ainda não é cadastrado? Não Perca Tempo!</div>
+				<div id="texto-inf">Você fica por dentro de todas as novidades do site! vai saber das promoções, os novos produtos e eventos.</div>
+			</div>
+	      	<div class="alinha-dados row">
+	<div class=" col m6 l7">
+		<form action="perfil.html">
+			<div class="row">
+		        <div class="input-field col s12">
+		          <input id="nome" type="text" class="validate">
+		          <label for="nome">Nome Completo</label>
+		        </div>
+		     </div>
+		     <div class="row">
+		        <div class="input-field col s12">
+		          <input id="email" type="text" class="validate">
+		          <label for="email">Email</label>
+		        </div>
+		     </div>
+		     <div class="row">
+		        <div class="input-field col s12">
+		          <input id="senha" type="password" class="validate">
+		          <label for="senha">Senha</label>
+		        </div>
+		     </div>
+		    <div class="grupo-check">
+		    	<input type="checkbox" class="filled-in validate" id="termos" />
+	      		<label for="termos">Li e aceito os Termos e Condições de Uso</label>
+	      	</div>
+	      	<div class="grupo-check">
+		    	<input type="checkbox" class="filled-in validate" id="novidades" />
+	      		<label for="novidades">Aceito receber novidades do site através do email</label>
+	      	</div>
+	      	<div class="alinhabt">
+	      		<button id="bt-registro" class="btn waves-effect" type="submit" name="action">Registrar </button>
+	      	</div>
+		</form>
+	</div>
+	<div class="loga-conta col l5">
+		<div class="alinhabt">
+      		<button id="log-f" class="btn waves-effect" type="submit" name="action">Logar com o Facebook
+      	</div>
+      	<div class="alinhabt">
+      		<button id="log-g" class="btn waves-effect" type="submit" name="action"><i class="mdi mdi-facebook-box"></i>Logar com o Google</button>
+      	</div>
+	</div>
+</div>
+	    </div>
+	</div>
+
+	<nav class="menu z-depth-0">
+		<div class="nav-wrapper">
+			<!--	BOTÃO MENU 		-->
+			<a href="#" data-activates="menu-mobile" class="button-collapse">
+				<i class="material-icons">menu</i>
+			</a>
+
+			<ul id="nav-mobile" class="left hide-on-med-and-down">
+				<li><a href="#">Home</a></li>
+				<li><a href="#" class="dropdown-button" data-activates="dropdown" data-beloworigin="true"><i class="material-icons right">arrow_drop_down</i>Produtos</a></li>
+				<li><a href="#">Contato</a></li>
+				<li><a href="#">Workshops</a></li>
+			</ul>
+
+			<!--Menu dropdown-->
+			<ul class="dropdown-content" id="dropdown">
+				<li><a href="produto.html">Link 1</a></li>
+				<li><a href="produto.html">Link 2</a></li>
+				<li><a href="produto.html">Link 3</a></li>
+			</ul>
+
+			<!--Menu Mobile-->
+			<ul id="menu-mobile" class="side-nav">
+				<li><a href="#">Home</a></li>
+				<li class="no-padding">
+					<ul class="collapsible collapsible-accordion">
+						<li>
+							<a class="collapsible-header"><i class="material-icons right">arrow_drop_down</i>Dropdown</a>
+							<div class="collapsible-body">
+								<ul>
+					                <li><a href="produto.html">First</a></li>
+					                <li><a href="produto.html">Second</a></li>
+					                <li><a href="produto.html">Third</a></li>
+					                <li><a href="produto.html">Fourth</a></li>
+					            </ul>
+            				</div>
+          				</li>
+       				</ul>
+     			</li>
+				<li><a href="#">Contato</a></li>
+				<li><a href="#">Workshops</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+</header>
+
+<main>
+<!--INICIO DO CONTAINER-->
+<div class="container">
+	<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="imgs/feira.jpg">
+      </li>
+      <li class="pink darken-1">
+        <img src="">
+        <div class="caption center-align">
+          <h2>Em breve!</h2>
+          <h4 class="light grey-text text-lighten-3">Você poderá comprar nossos produtos por aqui!</h4>
+        </div>
+      </li>
+      <li>
+        <img src="imgs/banner2.jpg">
+      </li>
+    </ul>
+  </div>
+
+<!--FIM DO CONTAINER-->
+</div>
+
+<div class="breve-prod row">
+	<p class="inf-prod">Em breve você poderá comprar estes produtos aqui !</p>	
+
+	<div class="produto col s6 m3 l3">
+		<section>
+			<a href="#desc-prod" class="modal-trigger"><img title="Clique para ver a descrição do produto" id="img-prod" src="imgs/produtos/bolsa-sagrado-coração-de-jesus.jpeg"></a>
+		</section>
+		<section>
+			<p id="nome-prod">Bolsa Sagrado Coração de Jesus</p>
+		</section>
+		<section >
+			<p id="preco-prod">R$ 59,99</p>
+		</section>
+		<div class="span">
+			<button class="btn">Comprar</button>
+		</div>
+		<div class="span">
+			<a href="#">adicionar ao carrinho +</a>
+		</div>
+	</div>
+
+	<div class="produto col s6 m3 l3">
+		<section>
+			<a href="#desc-prod" class="modal-trigger"><img title="Clique para ver a descrição do produto" id="img-prod" src="imgs/produtos/Bolsa-lado-paris.jpeg"></a>
+		</section>
+		<section>
+			<p id="nome-prod">Bolsa Paris</p>
+		</section>
+		<section >
+			<p id="preco-prod">R$ 59,99</p>
+		</section>
+		<div class="span">
+			<button class="btn">Comprar</button>
+		</div>
+		<div class="span">
+			<a href="#">adicionar ao carrinho +</a>
+		</div>
+	</div>
+
+	<div class="produto col s6 m3 l3">
+		<section>
+			<a href="#desc-prod" class="modal-trigger"><img title="Clique para ver a descrição do produto" id="img-prod" src="imgs/produtos/a-menina-e-o-cachorro.jpeg"></a>
+		</section>
+		<section>
+			<p id="nome-prod">A Menina e o Cachorro</p>
+		</section>
+		<section >
+			<p id="preco-prod">R$ 59,99</p>
+		</section>
+		<div class="span">
+			<button class="btn">Comprar</button>
+		</div>
+		<div class="span">
+			<a href="#">adicionar ao carrinho +</a>
+		</div>
+	</div>
+
+	<div class="produto col s6 m3 l3">
+		<section>
+			<a href="#desc-prod" class="modal-trigger"><img title="Clique para ver a descrição do produto" id="img-prod" src="imgs/produtos/bolsa-anjo.jpeg"></a>
+		</section>
+		<section>
+			<p id="nome-prod">Bolsa Anjo</p>
+		</section>
+		<section >
+			<p id="preco-prod">R$ 59,99</p>
+		</section>
+		<div class="span">
+			<button class="btn">Comprar</button>
+		</div>
+		<div class="span">
+			<a href="#">adicionar ao carrinho +</a>
+		</div>
+	</div>
+
+</div>
+
+<!--MODAL PRODUTOS-->
+<div id="desc-prod" class="modal">
+	<div class="modal-content">
+		<div class="row">
+		    <div class="outras-img col l1 m1"></div>
+		    <div class="desc-img col l5">
+		    	<img src="imgs/oi1.jpg">
+		    </div>
+		    <div class="col l6">
+		    	Aqui fica os dados do produto
+		    </div>
+		</div>
+	</div>
+</div>
+
+<div class="desc-work row">
+	<p class="titulo-work">Faça parte dos nossos workshops!</p>
+	<p>Confira as aulas disponíveis e aprenda com Atêlie Mosamo Patchwork</p>
+	<p>Inscrições abertas, corra antes que encerrem!</p>
+	<button class="btn confira">Confira aqui</button>
+</div>
+
+
+</main>
+
+
+
+<footer></footer>
+
+
+<!--SCRIPTS-->
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <script type="text/javascript" src="js/materialize.js"></script>
+
+ <!-- MENU MOBILE -->
+ <script>
+ 	$(".button-collapse").sideNav(); 
+
+  $(document).ready(function(){
+      $('.slider').slider();
+    })
+  $(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+
+ $('.next').click(function(){
+ 	$('.carousel').carousel('next');
+
+ });
+$('.prev').click(function(){
+ $('.carousel').carousel('prev');
+ });
+   </script>
+</body>
+</html>
